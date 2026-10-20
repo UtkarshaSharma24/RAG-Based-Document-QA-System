@@ -1,38 +1,44 @@
 # RAG-Based Document Q&A System
 
-A Python-based document question-answering application that retrieves relevant information from a document collection and helps users find answers using Retrieval-Augmented Generation (RAG) concepts.
+## 📌 Project Overview
 
-## Overview
+The RAG-Based Document Q&A System is a Python application that allows users to ask questions about a collection of documents and receive relevant answers based on the available content.
 
-Reading multiple documents to find specific information can be time-consuming. This project provides a simple way to ask questions about a collection of documents and retrieve relevant content.
+The system uses Retrieval-Augmented Generation (RAG) concepts to retrieve relevant document sections before generating or extracting an answer. This helps users find information without manually reading every document.
 
-The system loads documents, splits their text into chunks, retrieves relevant information based on a user's query, and uses the configured answer-generation method to produce a response.
+## 🎯 Objectives
 
-## Features
+- Build a document-based question-answering system.
+- Extract and process text from different file formats.
+- Split documents into smaller chunks for efficient retrieval.
+- Retrieve relevant information using embeddings or TF-IDF.
+- Generate answers based on retrieved content.
+- Evaluate retrieval performance using predefined questions.
 
-- **Document Processing:** Supports TXT, Markdown, PDF, and DOCX files.
-- **Text Chunking:** Splits documents into smaller sections for retrieval.
-- **Information Retrieval:** Supports embedding-based retrieval and TF-IDF.
-- **Question Answering:** Produces answers using retrieved document content.
-- **Streamlit Interface:** Provides a simple, interactive user interface.
-- **Evaluation:** Includes scripts for testing retrieval performance.
-- **Data Analysis:** Includes an EDA script for exploring the project datasets.
-- **Flexible Configuration:** Supports different retrieval and answer-generation configurations.
+## ✨ Features
 
-## Tech Stack
+- Document loading from TXT, Markdown, PDF, and DOCX files.
+- Text chunking and preprocessing.
+- Semantic retrieval using embeddings.
+- TF-IDF-based retrieval fallback.
+- Extractive answer generation.
+- Optional integration with external LLM providers.
+- Streamlit-based user interface.
+- Evaluation metrics for retrieval performance.
+- Exploratory Data Analysis (EDA) and report generation.
 
-| Category | Technologies |
-|---|---|
-| Language | Python |
-| User Interface | Streamlit |
-| Machine Learning | Scikit-learn, NumPy, Pandas |
-| Embeddings | Sentence Transformers, TF-IDF |
-| Vector Store | ChromaDB |
-| Document Processing | PyPDF, python-docx |
-| LLM Integration | OpenAI / Ollama, depending on configuration |
-| Visualization | Matplotlib, Seaborn |
+## 🛠️ Tech Stack
 
-## Project Structure
+- **Programming Language:** Python
+- **Frontend:** Streamlit
+- **Document Processing:** PyPDF, python-docx
+- **Machine Learning:** Scikit-learn, NumPy, Pandas
+- **Embeddings:** Sentence Transformers / TF-IDF
+- **Vector Database:** ChromaDB
+- **LLM Integration:** OpenAI / Ollama (optional)
+- **Data Visualization:** Matplotlib, Seaborn
+
+## 📂 Project Structure
 
 ```text
 RAG-Based_Document_QA_System/
@@ -64,13 +70,15 @@ RAG-Based_Document_QA_System/
 └── README.md
 ```
 
-## Getting Started
+*Note: The exact contents of the `figures/`, `reports/`, and `data/corpus/` folders depend on the files included in the project.*
 
-### Prerequisites
+## ⚙️ Requirements
 
 - Python 3.10 or later
-- pip package manager
-- Git (optional)
+- pip
+- Git (optional, for version control)
+
+## 🚀 Installation and Setup
 
 ### 1. Clone the Repository
 
@@ -79,11 +87,13 @@ git clone YOUR_GITHUB_REPOSITORY_URL
 cd RAG-Based_Document_QA_System
 ```
 
-Replace `YOUR_GITHUB_REPOSITORY_URL` with your repository's actual URL.
+Replace `YOUR_GITHUB_REPOSITORY_URL` with your actual GitHub repository URL.
+
+If you have already downloaded the project, open a terminal in the project folder.
 
 ### 2. Create a Virtual Environment
 
-On Windows, open PowerShell in the project directory and run:
+**Windows PowerShell:**
 
 ```powershell
 python -m venv venv
@@ -95,7 +105,7 @@ Activate the environment:
 .\venv\Scripts\Activate.ps1
 ```
 
-If PowerShell blocks script execution, run:
+If PowerShell blocks activation, run:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
@@ -116,24 +126,41 @@ python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-Open the local URL displayed in your terminal to access the application.
+Streamlit will display a local URL in the terminal. Open that URL in your browser to use the application.
 
-## Retrieval Configuration
+## 💬 How to Use
 
-The project supports configurable retrieval methods, depending on the implementation and settings in `rag/config.py`.
+1. Start the Streamlit application.
+2. Open the application in your browser.
+3. Enter a question related to the available documents.
+4. Allow the system to retrieve relevant document content.
+5. Review the answer and supporting information displayed by the application.
+6. Try additional questions to explore the document collection.
 
-To use TF-IDF retrieval in Windows PowerShell:
+The quality of the answer depends on the available documents, retrieval settings, and the relevance of the retrieved content.
+
+## 🔍 Retrieval Methods
+
+### Embedding-Based Retrieval
+
+The system can use text embeddings to represent document chunks and retrieve content that is semantically similar to a user's question.
+
+### TF-IDF Retrieval
+
+TF-IDF provides a lightweight alternative based on the importance of words in the document collection and the user's query.
+
+To run with the TF-IDF configuration in Windows PowerShell:
 
 ```powershell
 $env:EMBEDDER = "tfidf"
 python -m streamlit run app.py
 ```
 
-Embedding-based retrieval may require downloading a model the first time it runs.
+The supported configuration depends on the settings defined in `rag/config.py`.
 
-## Evaluation
+## 📊 Evaluation
 
-The repository includes scripts for exploratory data analysis and evaluating retrieval performance.
+The project includes an evaluation script for testing retrieval and answer performance using predefined questions.
 
 Run the evaluation script:
 
@@ -141,35 +168,37 @@ Run the evaluation script:
 python evaluate.py
 ```
 
-Run exploratory data analysis:
-
-```bash
-python eda.py
-```
-
-To evaluate using TF-IDF in PowerShell:
+To run evaluation with TF-IDF:
 
 ```powershell
 $env:EMBEDDER = "tfidf"
 python evaluate.py
 ```
 
-Evaluation may include metrics such as:
+For exploratory data analysis, run:
 
-- **Hit@1:** Whether a relevant result appears first.
-- **Hit@3:** Whether a relevant result appears in the top three.
-- **Mean Reciprocal Rank (MRR):** Measures the ranking position of the first relevant result.
-- **Answer Accuracy:** Checks answers against predefined evaluation criteria.
-- **Refusal Rate:** Tracks queries the system declines to answer.
-- **Latency:** Measures query-processing time.
+```bash
+python eda.py
+```
 
-Actual results depend on the dataset, configuration, and evaluation run. Run the scripts before publishing specific performance figures.
+Depending on the configuration and execution, the scripts may generate evaluation results and analysis outputs under the reports or data directories.
 
-## Optional LLM Configuration
+### Evaluation Metrics
 
-An external LLM provider may be configured if supported by your selected backend.
+- **Hit@1:** Checks whether a relevant document is ranked first.
+- **Hit@3:** Checks whether a relevant document appears among the top three results.
+- **Mean Reciprocal Rank (MRR):** Measures how highly the first relevant result is ranked.
+- **Answer Accuracy:** Evaluates answers against the project's predefined evaluation criteria.
+- **Refusal Rate:** Measures how often the system declines to answer.
+- **Latency:** Measures the time required to process a query.
 
-For example, with an OpenAI-compatible configuration in PowerShell:
+Actual metric values should be reported only after running the evaluation scripts.
+
+## 🔐 Optional LLM Configuration
+
+The application may support external LLM providers depending on the configuration in `rag/llm.py`.
+
+For example, if OpenAI is supported by your configured backend, set the required environment variables in PowerShell:
 
 ```powershell
 $env:LLM_BACKEND = "openai"
@@ -177,27 +206,43 @@ $env:OPENAI_API_KEY = "YOUR_API_KEY_HERE"
 python -m streamlit run app.py
 ```
 
-Replace the placeholder with your own API key. Never commit API keys or other secrets to GitHub.
+Replace the placeholder with your own API key. Never publish API keys or other secrets in your GitHub repository.
 
-## Limitations
+The application may also use an extractive fallback that returns information from retrieved document content without requiring an external generative model.
 
-- Answer quality depends on the documents available to the system.
-- Retrieval may return irrelevant results for ambiguous or unsupported questions.
-- Embedding models may need an internet connection for initial setup.
-- External LLM services may require an API key and can incur usage costs.
-- Evaluation scores depend on the quality of the test dataset and evaluation criteria.
+## 🧪 Dataset and Documents
 
-## Future Improvements
+The project contains a document corpus and evaluation datasets used for retrieval experiments.
 
-- Add more document formats.
+The supplied documents and evaluation questions are intended for project demonstration and testing. Check the dataset files and data dictionary before making claims about the dataset size, origin, or quality.
+
+If synthetic data is included, it should be clearly identified as synthetic and should not be presented as real-world user data.
+
+## ⚠️ Limitations
+
+- Answers depend on the quality and coverage of the source documents.
+- Retrieval may return irrelevant content for ambiguous or unsupported questions.
+- Embedding models may require an internet connection on the first download.
+- Performance depends on the selected retrieval method and system configuration.
+- External LLM providers may require API keys and may incur usage costs.
+- Evaluation results depend on the quality of the test questions and evaluation criteria.
+
+## 🔮 Future Improvements
+
+- Add support for more document formats.
 - Improve chunking and retrieval strategies.
-- Introduce reranking for more relevant results.
+- Add reranking for more relevant search results.
 - Improve source citations and answer traceability.
 - Expand the evaluation dataset.
-- Add document management and user authentication.
+- Add user authentication and document management.
 - Deploy the application to a cloud platform.
 
-## Purpose
+## 👨‍💻 Author
 
-This project explores document processing, information retrieval, embeddings, and Retrieval-Augmented Generation through a practical Python application.
+**Utkarsh Sharma**  
 
+Project: RAG-Based Document Q&A System
+
+---
+
+*This project was developed for educational and learning purposes to explore document retrieval, embeddings, and Retrieval-Augmented Generation (RAG).*
