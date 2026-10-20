@@ -1,0 +1,9 @@
+Pradhan Mantri Jan Dhan Yojana (PMJDY) - scheme summary
+
+The Pradhan Mantri Jan Dhan Yojana is a national mission for financial inclusion. It was launched on 28 August 2014. The aim is to make sure that every household has access to banking facilities such as a basic savings account, credit, insurance and pension.
+
+A Jan Dhan account is a basic savings bank account. It can be opened with zero balance, so there is no minimum balance requirement. Account holders receive a RuPay debit card. Interest is paid on the deposit like in other savings accounts. An account can be opened in any bank branch or through a Business Correspondent (Bank Mitra) with simple documents such as Aadhaar.
+
+The RuPay card comes with built-in accident insurance cover. The cover is 2 lakh rupees for cards issued to accounts opened after 28 August 2018, and 1 lakh rupees for accounts opened before that date. After satisfactory operation of the account for six months, the account holder becomes eligible for an overdraft facility of up to 10,000 rupees.
+
+Jan Dhan accounts are also used to receive Direct Benefit Transfer payments from government schemes directly into the beneficiary's account.

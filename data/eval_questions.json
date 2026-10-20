@@ -1,0 +1,230 @@
+[
+ {
+  "question": "What is the Preamble's description of India?",
+  "doc_id": "DOC001",
+  "keyword": "Sovereign",
+  "in_scope": true
+ },
+ {
+  "question": "When did the Constitution of India come into force?",
+  "doc_id": "DOC001",
+  "keyword": "26 January 1950",
+  "in_scope": true
+ },
+ {
+  "question": "Which amendment added the words Socialist and Secular to the Preamble?",
+  "doc_id": "DOC001",
+  "keyword": "42nd",
+  "in_scope": true
+ },
+ {
+  "question": "Which articles cover the Right to Equality?",
+  "doc_id": "DOC001",
+  "keyword": "14",
+  "in_scope": true
+ },
+ {
+  "question": "Which article makes education a fundamental right for children aged 6 to 14?",
+  "doc_id": "DOC001",
+  "keyword": "21A",
+  "in_scope": true
+ },
+ {
+  "question": "Which amendment removed the Right to Property from Fundamental Rights?",
+  "doc_id": "DOC001",
+  "keyword": "44th",
+  "in_scope": true
+ },
+ {
+  "question": "Can a person approach the Supreme Court directly for a fundamental right violation?",
+  "doc_id": "DOC001",
+  "keyword": "Article 32",
+  "in_scope": true
+ },
+ {
+  "question": "Are Directive Principles enforceable by courts?",
+  "doc_id": "DOC002",
+  "keyword": "not enforceable",
+  "in_scope": true
+ },
+ {
+  "question": "Which part of the Constitution has Fundamental Duties?",
+  "doc_id": "DOC002",
+  "keyword": "Part IVA",
+  "in_scope": true
+ },
+ {
+  "question": "How many Fundamental Duties were there originally?",
+  "doc_id": "DOC002",
+  "keyword": "ten",
+  "in_scope": true
+ },
+ {
+  "question": "Which committee recommended Fundamental Duties?",
+  "doc_id": "DOC002",
+  "keyword": "Swaran Singh",
+  "in_scope": true
+ },
+ {
+  "question": "What is the maximum strength of the Lok Sabha?",
+  "doc_id": "DOC003",
+  "keyword": "550",
+  "in_scope": true
+ },
+ {
+  "question": "How many years does a Rajya Sabha member serve?",
+  "doc_id": "DOC003",
+  "keyword": "six years",
+  "in_scope": true
+ },
+ {
+  "question": "How many members can the President nominate to the Rajya Sabha?",
+  "doc_id": "DOC003",
+  "keyword": "12",
+  "in_scope": true
+ },
+ {
+  "question": "What majority is needed to amend the Constitution under Article 368?",
+  "doc_id": "DOC003",
+  "keyword": "two thirds",
+  "in_scope": true
+ },
+ {
+  "question": "What did the Kesavananda Bharati case decide?",
+  "doc_id": "DOC003",
+  "keyword": "basic structure",
+  "in_scope": true
+ },
+ {
+  "question": "How much money does PM-KISAN give per year?",
+  "doc_id": "DOC004",
+  "keyword": "6,000",
+  "in_scope": true
+ },
+ {
+  "question": "How many instalments are paid under PM-KISAN?",
+  "doc_id": "DOC004",
+  "keyword": "three",
+  "in_scope": true
+ },
+ {
+  "question": "Who is not eligible for PM-KISAN?",
+  "doc_id": "DOC004",
+  "keyword": "income tax",
+  "in_scope": true
+ },
+ {
+  "question": "When was PM-KISAN launched?",
+  "doc_id": "DOC004",
+  "keyword": "February 2019",
+  "in_scope": true
+ },
+ {
+  "question": "What is the health cover per family under Ayushman Bharat PM-JAY?",
+  "doc_id": "DOC005",
+  "keyword": "5 lakh",
+  "in_scope": true
+ },
+ {
+  "question": "Which authority implements PM-JAY?",
+  "doc_id": "DOC005",
+  "keyword": "National Health Authority",
+  "in_scope": true
+ },
+ {
+  "question": "How were beneficiaries of PM-JAY identified?",
+  "doc_id": "DOC005",
+  "keyword": "SECC",
+  "in_scope": true
+ },
+ {
+  "question": "What is the minimum balance required in a Jan Dhan account?",
+  "doc_id": "DOC006",
+  "keyword": "zero balance",
+  "in_scope": true
+ },
+ {
+  "question": "What is the accident insurance cover on the RuPay card for new Jan Dhan accounts?",
+  "doc_id": "DOC006",
+  "keyword": "2 lakh",
+  "in_scope": true
+ },
+ {
+  "question": "What is the overdraft limit for Jan Dhan accounts?",
+  "doc_id": "DOC006",
+  "keyword": "10,000",
+  "in_scope": true
+ },
+ {
+  "question": "When was Jan Dhan Yojana launched?",
+  "doc_id": "DOC006",
+  "keyword": "28 August 2014",
+  "in_scope": true
+ },
+ {
+  "question": "How many days does the PIO have to reply to an RTI application?",
+  "doc_id": "DOC007",
+  "keyword": "30 days",
+  "in_scope": true
+ },
+ {
+  "question": "What is the RTI application fee for central government departments?",
+  "doc_id": "DOC007",
+  "keyword": "10 rupees",
+  "in_scope": true
+ },
+ {
+  "question": "Where can I file a second appeal under RTI?",
+  "doc_id": "DOC007",
+  "keyword": "Information Commission",
+  "in_scope": true
+ },
+ {
+  "question": "How do I create a virtual environment in Python?",
+  "doc_id": "DOC008",
+  "keyword": "python -m venv venv",
+  "in_scope": true
+ },
+ {
+  "question": "How do I install packages from requirements.txt?",
+  "doc_id": "DOC008",
+  "keyword": "pip install -r requirements.txt",
+  "in_scope": true
+ },
+ {
+  "question": "How do I leave the virtual environment?",
+  "doc_id": "DOC008",
+  "keyword": "deactivate",
+  "in_scope": true
+ },
+ {
+  "question": "Who won the cricket world cup in 2011?",
+  "doc_id": null,
+  "keyword": null,
+  "in_scope": false
+ },
+ {
+  "question": "What is the recipe for chicken biryani?",
+  "doc_id": null,
+  "keyword": null,
+  "in_scope": false
+ },
+ {
+  "question": "How do I invest in mutual funds?",
+  "doc_id": null,
+  "keyword": null,
+  "in_scope": false
+ },
+ {
+  "question": "What is the capital of Australia?",
+  "doc_id": null,
+  "keyword": null,
+  "in_scope": false
+ },
+ {
+  "question": "Explain how a nuclear reactor works.",
+  "doc_id": null,
+  "keyword": null,
+  "in_scope": false
+ }
+]

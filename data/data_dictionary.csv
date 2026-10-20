@@ -1,0 +1,8 @@
+column_name,data_type,sample_value_1,sample_value_2,sample_value_3,nullable,description_fill_in
+doc_id,string (categorical),DOC002,DOC034,DOC013,No,Unique ID of the source document in the corpus (DOC001 to DOC050). Many chunks can belong to one document.
+doc_type,string (categorical),TXT,TXT,HTML,No,"File format of the source document. Five values: PDF, Word, TXT, HTML, Markdown. Decides which loader is used while ingesting."
+chunk_id,string (unique key),CHK00001,CHK00002,CHK00003,No,Unique ID of one text chunk (CHK00001 to CHK05000). A chunk is a small piece of a document that is embedded and stored in the vector database.
+word_count,integer,457,302,52,No,Number of words in the chunk. Range 50 to 500. Very small chunks may miss context and very large chunks may add noise to the retrieved context.
+retrieval_score,float 0-1,0.5962,0.7397,0.7735,No,Cosine similarity between the query embedding and the chunk embedding. Range 0.50 to 1.00. Higher means the chunk is more relevant to the query.
+query_type,string (categorical),analytical,factual,comparative,No,"Kind of question asked: factual, procedural, comparative, analytical or summarization. Used to compare how the system performs on different question styles."
+answer_quality_score,float 0-1,0.942,0.976,0.66,No,"Quality of the generated answer on a 0 to 1 scale (range 0.60 to 1.00), e.g. from human or LLM-judge rating of correctness and faithfulness to the source chunk. Higher is better."

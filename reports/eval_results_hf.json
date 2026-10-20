@@ -1,0 +1,350 @@
+{
+ "summary": {
+  "embedder": "hf",
+  "vector_store": "chroma",
+  "llm": "extractive",
+  "documents": 8,
+  "chunks": 33,
+  "in_scope_questions": 33,
+  "out_of_scope_questions": 5,
+  "hit_at_1": 0.97,
+  "hit_at_3": 1.0,
+  "mrr": 0.985,
+  "answer_keyword_accuracy": 0.879,
+  "out_of_scope_refusal_rate": 1.0,
+  "avg_latency_ms": 65.09,
+  "p95_latency_ms": 79.26
+ },
+ "details": [
+  {
+   "q": "What is the Preamble's description of India?",
+   "expected": "DOC001",
+   "retrieved": [
+    "DOC001",
+    "DOC002",
+    "DOC002"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "When did the Constitution of India come into force?",
+   "expected": "DOC001",
+   "retrieved": [
+    "DOC001",
+    "DOC002",
+    "DOC003"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Which amendment added the words Socialist and Secular to the Preamble?",
+   "expected": "DOC001",
+   "retrieved": [
+    "DOC001",
+    "DOC001",
+    "DOC001"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Which articles cover the Right to Equality?",
+   "expected": "DOC001",
+   "retrieved": [
+    "DOC001",
+    "DOC001",
+    "DOC001"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Which article makes education a fundamental right for children aged 6 to 14?",
+   "expected": "DOC001",
+   "retrieved": [
+    "DOC001",
+    "DOC001",
+    "DOC001"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Which amendment removed the Right to Property from Fundamental Rights?",
+   "expected": "DOC001",
+   "retrieved": [
+    "DOC001",
+    "DOC001",
+    "DOC001"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Can a person approach the Supreme Court directly for a fundamental right violation?",
+   "expected": "DOC001",
+   "retrieved": [
+    "DOC002",
+    "DOC001",
+    "DOC001"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Are Directive Principles enforceable by courts?",
+   "expected": "DOC002",
+   "retrieved": [
+    "DOC002",
+    "DOC002",
+    "DOC002"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Which part of the Constitution has Fundamental Duties?",
+   "expected": "DOC002",
+   "retrieved": [
+    "DOC002",
+    "DOC002",
+    "DOC002"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "How many Fundamental Duties were there originally?",
+   "expected": "DOC002",
+   "retrieved": [
+    "DOC002",
+    "DOC002",
+    "DOC002"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Which committee recommended Fundamental Duties?",
+   "expected": "DOC002",
+   "retrieved": [
+    "DOC002",
+    "DOC002",
+    "DOC002"
+   ],
+   "keyword_in_answer": false
+  },
+  {
+   "q": "What is the maximum strength of the Lok Sabha?",
+   "expected": "DOC003",
+   "retrieved": [
+    "DOC003",
+    "DOC003",
+    "DOC003"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "How many years does a Rajya Sabha member serve?",
+   "expected": "DOC003",
+   "retrieved": [
+    "DOC003",
+    "DOC003",
+    "DOC002"
+   ],
+   "keyword_in_answer": false
+  },
+  {
+   "q": "How many members can the President nominate to the Rajya Sabha?",
+   "expected": "DOC003",
+   "retrieved": [
+    "DOC003",
+    "DOC003",
+    "DOC003"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "What majority is needed to amend the Constitution under Article 368?",
+   "expected": "DOC003",
+   "retrieved": [
+    "DOC003",
+    "DOC001",
+    "DOC001"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "What did the Kesavananda Bharati case decide?",
+   "expected": "DOC003",
+   "retrieved": [
+    "DOC003",
+    "DOC002",
+    "DOC007"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "How much money does PM-KISAN give per year?",
+   "expected": "DOC004",
+   "retrieved": [
+    "DOC004",
+    "DOC004",
+    "DOC006"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "How many instalments are paid under PM-KISAN?",
+   "expected": "DOC004",
+   "retrieved": [
+    "DOC004",
+    "DOC004",
+    "DOC004"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Who is not eligible for PM-KISAN?",
+   "expected": "DOC004",
+   "retrieved": [
+    "DOC004",
+    "DOC004",
+    "DOC005"
+   ],
+   "keyword_in_answer": false
+  },
+  {
+   "q": "When was PM-KISAN launched?",
+   "expected": "DOC004",
+   "retrieved": [
+    "DOC004",
+    "DOC006",
+    "DOC005"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "What is the health cover per family under Ayushman Bharat PM-JAY?",
+   "expected": "DOC005",
+   "retrieved": [
+    "DOC005",
+    "DOC005",
+    "DOC005"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Which authority implements PM-JAY?",
+   "expected": "DOC005",
+   "retrieved": [
+    "DOC005",
+    "DOC006",
+    "DOC004"
+   ],
+   "keyword_in_answer": false
+  },
+  {
+   "q": "How were beneficiaries of PM-JAY identified?",
+   "expected": "DOC005",
+   "retrieved": [
+    "DOC005",
+    "DOC005",
+    "DOC006"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "What is the minimum balance required in a Jan Dhan account?",
+   "expected": "DOC006",
+   "retrieved": [
+    "DOC006",
+    "DOC006",
+    "DOC006"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "What is the accident insurance cover on the RuPay card for new Jan Dhan accounts?",
+   "expected": "DOC006",
+   "retrieved": [
+    "DOC006",
+    "DOC006",
+    "DOC005"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "What is the overdraft limit for Jan Dhan accounts?",
+   "expected": "DOC006",
+   "retrieved": [
+    "DOC006",
+    "DOC006",
+    "DOC006"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "When was Jan Dhan Yojana launched?",
+   "expected": "DOC006",
+   "retrieved": [
+    "DOC006",
+    "DOC006",
+    "DOC004"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "How many days does the PIO have to reply to an RTI application?",
+   "expected": "DOC007",
+   "retrieved": [
+    "DOC007",
+    "DOC007",
+    "DOC007"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "What is the RTI application fee for central government departments?",
+   "expected": "DOC007",
+   "retrieved": [
+    "DOC007",
+    "DOC007",
+    "DOC005"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "Where can I file a second appeal under RTI?",
+   "expected": "DOC007",
+   "retrieved": [
+    "DOC007",
+    "DOC007",
+    "DOC007"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "How do I create a virtual environment in Python?",
+   "expected": "DOC008",
+   "retrieved": [
+    "DOC008",
+    "DOC008",
+    "DOC008"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "How do I install packages from requirements.txt?",
+   "expected": "DOC008",
+   "retrieved": [
+    "DOC008",
+    "DOC008",
+    "DOC008"
+   ],
+   "keyword_in_answer": true
+  },
+  {
+   "q": "How do I leave the virtual environment?",
+   "expected": "DOC008",
+   "retrieved": [
+    "DOC008",
+    "DOC008",
+    "DOC008"
+   ],
+   "keyword_in_answer": true
+  }
+ ]
+}

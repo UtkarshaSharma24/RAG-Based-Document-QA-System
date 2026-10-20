@@ -1,0 +1,14 @@
+langchain>=0.2
+langchain-text-splitters
+langchain-community
+langchain-openai        # only if LLM_BACKEND=openai
+chromadb
+sentence-transformers
+pypdf
+python-docx
+streamlit
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn

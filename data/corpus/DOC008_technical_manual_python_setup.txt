@@ -1,0 +1,11 @@
+Technical Manual - Setting up a Python project environment
+
+A virtual environment keeps the libraries of one project separate from other projects on the same computer. This avoids version conflicts between packages. Python 3.8 or higher is recommended.
+
+To create a virtual environment, open a terminal in the project folder and run the command python -m venv venv. This creates a folder named venv that contains a private copy of the Python interpreter.
+
+To activate the environment on Windows, run venv\Scripts\activate. On Linux or macOS, run source venv/bin/activate. After activation the terminal prompt shows the name of the environment. To leave the environment, run the command deactivate.
+
+Install the required libraries with the command pip install -r requirements.txt. The requirements.txt file lists every package and version that the project needs. To save the currently installed packages into this file, run pip freeze > requirements.txt.
+
+If an import error appears, first check that the virtual environment is active, and then check that the package is installed using pip list. For the RAG project, run the Streamlit application with the command streamlit run app.py after the environment is ready.
