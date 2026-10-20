@@ -1,5 +1,13 @@
 # RAG-Based Document Q&A System
 
+## 🔗 Live Demo
+
+Try the deployed application here:
+
+**[RAG-Based Document Q&A System – Live App](https://rag-based-document-app-system-kb75dnvqxzorlddjshqqdt.streamlit.app/)**
+
+The application is deployed on Streamlit Community Cloud. Open the live demo to explore the document-based question-answering system.
+
 ## 📌 Project Overview
 
 The RAG-Based Document Q&A System is a Python application that allows users to ask questions about a collection of documents and receive relevant answers based on the available content.
